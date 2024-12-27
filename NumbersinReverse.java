@@ -33,5 +33,17 @@ public static void main(String[] args) {
 }
 	
 	System.out.println(sum);
+	
+	//Print all the numbers divisible by 3 from 1 to 30 using a for loop.
+	//2. Display the count of such numbers at the end.
+	int count = 0;
+	for (int t=1;t<=30;t++) {
+		if(t%3==0) {
+		System.out.println(t);
+		count++;
+		
+	}
+}
+	System.out.println("count of odd :"+ count);
 }
 }
