@@ -22,7 +22,7 @@ public class studentui {
 			System.out.println("Enter Student ID : ");
 			int id = sc.nextInt();
 			System.out.println("Enter Student name  : ");
-			String name = sc.nextLine();
+			String name = sc.next();
 			sc.nextLine();
 			System.out.println("Class name : ");
 			String classname = sc.nextLine();
@@ -35,26 +35,39 @@ public class studentui {
 			break;
 		}
 		case 2:{
+			
+			System.out.println("Enter 1 to change ID");
+			System.out.println("Enter 2 to change NAME");
+			System.out.println("Enter 3 to change CLASS NAME");
+			System.out.println("Enter 4 to change STUDENT NUMBER");
+			System.out.println("Enter 5 to change C.G.P.A");
+			System.out.println("Enter which should update");
+			int a = sc.nextInt();
+			if (a==1) {
 			System.out.println("Enter Student ID : ");
 			int id = sc.nextInt();
 			st.setId(id);
+			}else if (a==2 ) {
 			
 			System.out.println("Enter Student name  : ");
-			String name = sc.nextLine();
-			st.getName();
-			sc.nextLine();
-			
+			String name = sc.next();
+			st.setName(name);
+			}
+			else if (a==3) {
 			System.out.println("Class name : ");
-			String classname = sc.nextLine();
-			st.getClassname();
-			
+			String classname = sc.next();
+			st.setClassname(classname);
+			}
+			else if (a==4) {
 			System.out.println("Student number: ");
 			long number = sc.nextLong();
-			st.getNumber();
-			
+			st.setNumber(number);
+			}
+			else if (a==5) {
 			System.out.println("over all CGPA Mark : ");
 			double cgpa = sc.nextDouble();
 			st.setCgpa(cgpa);
+			}
 			break;
 		}
 		case 3 :{
