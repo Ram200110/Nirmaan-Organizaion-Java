@@ -1,78 +1,47 @@
-package day4;
+package kishore;
 
 public class book {
-	private int id;
-	private String bname;
-	private String aname;
-	private int price;
-
-
-public int getId() {
-		return id;
-	}
-
-
-	public void setId(int id) {
-		this.id = id;
-	}
-
-
-	public String getBname() {
-		return bname;
-	}
-
-
-	public void setBname(String bname) {
-		this.bname = bname;
-	}
-
-
-	public String getAname() {
-		return aname;
-	}
-
-
-	public void setAname(String aname) {
-		this.aname = aname;
-	}
-
-
-	public int getPrice() {
-		return price;
-	}
-
-
-	public void setPrice(int price) {
-		this.price = price;
-	}
-
-
-	public book(int id, String bname, String aname, int price) {
-		super();
-		this.id = id;
-		this.bname = bname;
-		this.aname = aname;
-		this.price = price;
-	}
-		
-	public book() {
-	
-	}
-
-
-
-	@Override
-	public String toString() {
-		return "book [id=" + id + ", bname=" + bname + ", aname=" + aname + ", price=" + price + "]";
-	}
-
-
-
-
-
-	
-	}
-
-
-
-
+private int bookId;
+private String bookName;
+private String aurName;
+private double bookPrice;
+public int getBookId() {
+	return bookId;
+}
+public void setBookId(int bookId) {
+	this.bookId = bookId;
+}
+public String getBookName() {
+	return bookName;
+}
+public void setBookName(String bookName) {
+	this.bookName = bookName;
+}
+public String getAurName() {
+	return aurName;
+}
+public void setAurName(String aurName) {
+	this.aurName = aurName;
+}
+public double getBookPrice() {
+	return bookPrice;
+}
+public void setBookPrice(double bookPrice) {
+	this.bookPrice = bookPrice;
+}
+@Override
+public String toString() {
+	return "book [bookId=" + bookId + ", bookName=" + bookName + ", aurName=" + aurName + ", bookPrice=" + bookPrice
+			+ "]";
+}
+public book(int bookId, String bookName, String aurName, double bookPrice) {
+	super();
+	this.bookId = bookId;
+	this.bookName = bookName;
+	this.aurName = aurName;
+	this.bookPrice = bookPrice;
+}
+public book() {
+	super();
+}
+}
